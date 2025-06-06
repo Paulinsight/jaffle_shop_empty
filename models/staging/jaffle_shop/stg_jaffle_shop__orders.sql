@@ -1,7 +1,6 @@
 select
     id as order_id,
-    user_id as customer_id,
-    order_date,
-    status
+    customer as customer_id,
+    ordered_at as order_date
 
-from raw.jaffle_shop.orders
+from high-nature-448517-t4.raw.raw_orders
